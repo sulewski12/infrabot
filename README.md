@@ -2,7 +2,7 @@
 
 **Infrabot** is a proof-of-concept (PoC) chatbot developed for **Infrabel**, the company responsible for managing Belgium’s railway network.  
 
-Infrabel maintains extensive datasets containing detailed information about all trains — both Belgian and foreign — passing through its infrastructure. As of **May 2025**, retrieving specific information or statistics from these datasets required data scientists to manually write complex **SAS** queries.  
+Infrabel maintains extensive datasets containing detailed information about all trains (both Belgian and foreign) passing through its infrastructure. As of **May 2025**, retrieving specific information or statistics from these datasets required data scientists to manually write complex **SAS** queries.  
 
 For example, answering a question such as:  
 > *"How many freight trains passed through Brussels-South on weekends in June and July 2021?"*  
@@ -78,13 +78,7 @@ This implementation leverages ADK’s orchestration capabilities for reasoning, 
 
 **AI & Natural Language Understanding**
 - **Google Gemini 2.0 Flash API** – natural language to SAS PROC SQL generation  
-- **Google ADK (Agent Development Kit)** – agentic reasoning and task orchestration (for version 3)  
-- **LangChain-style architecture (planned)** – modular agent logic and memory control  
-
-**Integration & Utilities**
-- **dotenv** – for environment variable management  
-- **Requests** – for SAS OAuth2 authentication and API access  
-- **JSON / Regex / Datetime / Typing** – for parsing, validation, and data modeling  
+- **Google ADK (Agent Development Kit)** – agentic reasoning and task orchestration (for version 3)
 
 ---
 
@@ -99,7 +93,8 @@ Future work includes enhancing agentic reasoning, optimizing query generation ac
 
 > **User:** How many freight trains passed through Brussels-South in June 2023?  
 >  
-> **Infrabot:**  
+> **Infrabot:**
+> - Checks whether the question has all needed information to write a query and asks for clarification if needed.
 > - Generates the corresponding **PROC SQL** query.  
 > - Executes it on Infrabel’s SAS Viya database.  
 > - Returns a table of results, interactive charts, and optional map visualizations.  
@@ -109,7 +104,7 @@ Future work includes enhancing agentic reasoning, optimizing query generation ac
 
 ## 🧑‍💻 Authors
 
-Developed as part of an internal innovation initiative at **Infrabel**.  
+Developed by Paweł Sulewski.  
 The project demonstrates how natural language and AI can simplify access to complex railway data systems.
 
 ---
