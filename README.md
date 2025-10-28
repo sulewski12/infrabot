@@ -109,7 +109,7 @@ Future work includes enhancing agentic reasoning, optimizing query generation ac
 
 ---
 
-## 🧑‍💻 Authors
+## Author
 
 Developed by Paweł Sulewski.  
 The project demonstrates how natural language and AI can simplify access to complex railway data systems.
