@@ -1,9 +1,11 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Infrabel_logo.svg" alt="Infrabel Logo" width="250"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Infrabel_logo.svg/1024px-Infrabel_logo.svg.png" alt="Infrabel Logo" width="250"/>
 </p>
 
 <h1 align="center">🚆 Infrabot</h1>
 <p align="center">Natural Language Interface for Railway Data Exploration</p>
+
+---
 
 **Infrabot** is a proof-of-concept (PoC) chatbot developed for **Infrabel**, the company responsible for managing Belgium’s railway network.  
 
